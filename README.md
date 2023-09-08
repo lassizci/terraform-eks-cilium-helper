@@ -2,6 +2,15 @@
 Module to create a Kubernetes job, that removes aws-node and kube-proxy daemonsets. Helps
 when provisioning EKS cluster with Cilium.
 
+## Usage
+
+```hcl
+module "cilium_cleanup_helper" {
+  source          = "github.com/lassizci/terraform-eks-cilium-helper?ref=v0.9"
+  cluster_version = "1.27"
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 
 ## Inputs
