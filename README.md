@@ -6,8 +6,7 @@ when provisioning EKS cluster with Cilium.
 
 ```hcl
 module "cilium_cleanup_helper" {
-  source          = "github.com/lassizci/terraform-eks-cilium-helper?ref=v0.9"
-  cluster_version = "1.27"
+  source          = "github.com/lassizci/terraform-eks-cilium-helper?ref=v1.0"
 }
 ```
 
@@ -18,7 +17,7 @@ module "cilium_cleanup_helper" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_backoff_limit"></a> [backoff\_limit](#input\_backoff\_limit) | Backoff limit for the job | `number` | `10` | no |
-| <a name="input_cluster_version"></a> [cluster\_version](#input\_cluster\_version) | Version of kubernetes cluster, for matching kubectl image version | `string` | `"1.27"` | no |
+| <a name="input_kubectl_version"></a> [kubectl\_version](#input\_kubectl\_version) | kubectl image version | `string` | `"1.33.4"` | no |
 
 * * *
 <details>

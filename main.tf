@@ -59,7 +59,7 @@ resource "kubernetes_job" "this" {
         }
         container {
           name    = "kubectl"
-          image   = "bitnami/kubectl:${var.cluster_version}"
+          image   = "alpine/kubectl:${var.kubectl_version}"
           command = ["sh", "-c", "(kubectl -n kube-system delete daemonset/kube-proxy; kubectl -n kube-system delete daemonset aws-node) || true"]
         }
         restart_policy = "Never"

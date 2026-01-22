@@ -1,7 +1,7 @@
-variable "cluster_version" {
-  description = "Version of kubernetes cluster, for matching kubectl image version"
+variable "kubectl_version" {
+  description = "kubectl image version"
   type        = string
-  default     = "1.27"
+  default     = "1.33.4"
 }
 
 variable "backoff_limit" {
