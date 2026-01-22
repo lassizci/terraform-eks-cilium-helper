@@ -6,8 +6,7 @@ when provisioning EKS cluster with Cilium.
 
 ```hcl
 module "cilium_cleanup_helper" {
-  source          = "github.com/lassizci/terraform-eks-cilium-helper?ref=v0.9"
-  cluster_version = "1.27"
+  source          = "github.com/lassizci/terraform-eks-cilium-helper?ref=v1.0"
 }
 ```
 
